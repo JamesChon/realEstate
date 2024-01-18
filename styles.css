@@ -1,0 +1,72 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: arial;
+}
+img{
+    max-width: 100%;
+}
+
+/* utilities */
+.header-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-flex-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header */
+.site-init{
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    height: 40vh;
+    color: white;
+}
+.site-init p{
+    font-size: 20px;
+}
+.menu a{
+    margin-right: 20px;
+}
+
+/* about us */
+.about-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* house item */
+.house-item{
+    background-color: #dedede;
+    width: 400px;
+}
+.price{
+    color: green;
+    font-weight: bold;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+}
