@@ -1,4 +1,11 @@
 /* global */
+:root{
+    --primary: rgb(182, 92, 19);
+    --secondary: rgb(16, 139, 16);
+}
+html{
+    font-size: 62.5%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,14 +20,22 @@ body{
 img{
     max-width: 100%;
 }
-
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.4rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
 /* utilities */
 .header-flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 10rem;
 }
 
 .header-flex-v{
@@ -31,24 +46,53 @@ img{
 
 }
 .container{
-    width: 80%;
+    width: 80%; 
     margin: 0 auto;
 }
 
+.btn{
+    display: block;
+    font-size: 16px;
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+@media(max-width:768px){
+    .header-flex{
+        flex-direction: column;
+    }
+    .header-flex-v{
+        height: 20vh;
+        text-align: center;
+    }
+}
 /* header */
 .site-init{
     background-image: url(img/header.jpg);
-    background-size: cover;
     height: 40vh;
+    background-size: cover;
     color: white;
 }
 .site-init p{
-    font-size: 20px;
+    font-size: 2rem;
 }
 .menu a{
-    margin-right: 20px;
+    margin-right: 2rem;
+}
+.site-second{
+    background-color: #222222;
+    color: white;
 }
 
+@media(max-width:768px){
+    .site-init{
+        height: 22vh;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
+}
 /* about us */
 .about-flex{
     display: flex;
@@ -56,17 +100,68 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+@media(max-width:768px){
+    .about-flex{
+        flex-direction: column;
+    }
+}
+
 
 /* house item */
+.house-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .8rem;
+}
+.house-container h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
 .house-item{
-    background-color: #dedede;
-    width: 400px;
+    width: 325px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 .price{
-    color: green;
+    color: var(--secondary);
     font-weight: bold;
 }
 .icon{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+/* contact form */
+fieldset{
+    padding: 1rem;
+}
+legend, label, input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin: 1rem;
+}
+.input-container input,
+.input-container textarea{
+    width: 70%;
+    background-color: #dedede;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+
+}
+.input-container label{
+    display: inline-block;
+    width: 10rem;
+    text-align: right;
+    margin-right: 1rem;
 }
