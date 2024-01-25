@@ -10,56 +10,73 @@
     <header class="site-second">
         <div class="header-flex-v container">
             <div class="header-flex">
-            <h1>RealEstate</h1>
-            <nav class="menu">
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+                <h1>RealEstate</h1>
+                <nav class="menu">
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
             </div>
         </div>
     </header>
-<main class="container">
-    <h2>Contact</h2>
-    <p>Fill the next information</p>
-    <form class="">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <div class="input-container">
-                <label>Name:</label>
-                <input type="text" placeholder="Type your name">
-            </div>
-            <div class="input-container">
-                <label>Email:</label>
-                <input type="text" placeholder="Type your email">
-            </div>
-            <div class="input-container">
-                <label>Phone Number:</label>
-                <input type="text" placeholder="Type your phone number">
-            </div>
-            <div class="input-container">
-                <label>Message:</label>
-                <textarea cols="30" rows="10"></textarea>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Product Information</legend>
-            <div class="input-container">
-                <label>Type</label>
-                <select>
-                    <option value="--select an option-- "></option>
-                </select>
-            </div>
-            <div class="input-container">
-                <label>Phone Number:</label>
-                <input type="text" placeholder="Type your phone number">
-            </div>
-            <div class="input-container">
-                <label>Message:</label>
-                <textarea cols="30" rows="10"></textarea>
-            </div>
-        </fieldset>
-    </form>
-</main>
+    <main class="container">
+        <h2>Contact Us</h2>
+        <p>Fill in the following information:</p>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Type your name">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Type your email">
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Type your phone number">
+                </div>
+                <div class="input-container">
+                    <label for="message">Message:</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Product Information</legend>
+                <div class="input-container">
+                    <label for="type">Type:</label>
+                    <select id="type">
+                        <option value="--select an option--">--Select an option--</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="number">Number:</label>
+                    <input type="text" id="number" placeholder="Type a number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="input-container">
+                    <label for="contact-phone">Phone:</label>
+                    <select id="contact-phone">
+                        <option value="--select an option--">--Select an option--</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="contact-email">Email:</label>
+                    <input type="email" id="contact-email" placeholder="Type your email">
+                </div>
+                <div class="input-container">
+                    <label for="contact-date">Date:</label>
+                    <input type="date" id="contact-date">
+                </div>
+                <div class="input-container">
+                    <label for="contact-hour">Hour:</label>
+                    <input type="time" id="contact-hour">
+                </div>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>

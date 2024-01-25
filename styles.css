@@ -93,6 +93,12 @@ p{
         font-size: 1.5rem;
     }
 }
+h1{
+    font-size: 2.5rem;;
+}
+.menu a {
+    font-size: 1.8rem;
+}
 /* about us */
 .about-flex{
     display: flex;
@@ -117,16 +123,16 @@ p{
     border-radius: .8rem;
 }
 .house-container h2{
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
 }
 .house-item{
-    width: 325px;
+    width: 32.5rem;
     background-color: white;
-    border-radius: 8px;
+    border-radius: .8rem;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+    margin: 2rem;
 }
 .price{
     color: var(--secondary);
@@ -135,9 +141,9 @@ p{
 .icon{
     display: flex;
     justify-content: space-around;
-    gap: 20px;
-    padding: 0 20px;
-    margin-top: 10px;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 1rem;
 }
 
 /* contact form */
@@ -164,4 +170,137 @@ legend, label, input{
     width: 10rem;
     text-align: right;
     margin-right: 1rem;
+}
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.input-container {
+    margin-bottom: 15px;
+}
+/* About form */
+.about-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 2rem 0;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+}
+
+.about-menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+}
+
+.about-menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+.about-container main {
+    padding: 2rem 0;
+}
+
+.about-section,
+.gallery-section {
+    margin-bottom: 4rem;
+}
+
+.about-section h2,
+.gallery-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 2.6rem;
+}
+
+.about-values-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-values-list li {
+    margin-bottom: 0.5rem;
+}
+
+.about-photo-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-photo {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.about-photo p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Media Query for smaller screens */
+@media(max-width: 768px) {
+    .about-photo {
+        width: 100%;
+    }
+}
+
+/* Blog form */
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.blog-meta {
+    font-size: 1.4rem;
+    color: #777;
+    margin-bottom: 1rem;
 }
